@@ -31,16 +31,16 @@ public class TicketMachine
         total = 0;
     }
     
-    public TicketMachine(int price)
+    public TicketMachine(int precio)
     {
-        price = 800;
+        price = precio;
         balance = 0;
         total = 0;
     }
     
     public void showPrice()
     {
-        System.out.println("Tha price of a ticket is 800 cents");
+        System.out.println("Tha price of a ticket is " + price + " cents");
     }
 
     /**
