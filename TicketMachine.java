@@ -31,6 +31,13 @@ public class TicketMachine
         total = 0;
     }
     
+    public TicketMachine(int price)
+    {
+        price = 800;
+        balance = 0;
+        total = 0;
+    }
+    
     public void showPrice()
     {
         System.out.println("Tha price of a ticket is 800 cents");
