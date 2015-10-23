@@ -30,6 +30,11 @@ public class TicketMachine
         balance = 0;
         total = 0;
     }
+    
+    public void showPrice()
+    {
+        System.out.println("Tha price of a ticket is 50 cents");
+    }
 
     /**
      * Return the price of a ticket.
