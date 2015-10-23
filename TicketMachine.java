@@ -1,4 +1,4 @@
-/**
+ /**
  * TicketMachine models a naive ticket machine that issues
  * flat-fare tickets.
  * The price of a ticket is specified via the constructor.
@@ -17,6 +17,7 @@ public class TicketMachine
     private int balance;
     // The total amount of money collected by this machine.
     private int total;
+    private int amountOfMoneyRightNow;
 
     /**
      * Create a machine that issues tickets of the given price.
@@ -42,9 +43,14 @@ public class TicketMachine
      * Return the amount of money already inserted for the
      * next ticket.
      */
-    public int getBalance()
+    public int getAmountOfMoneyRightNow()
     {
-        return balance;
+        return amountOfMoneyRightNow;
+    }
+    
+    public void prompt()
+    {
+        System.out.println("Please, insert the correct amount of money");
     }
 
     /**
@@ -75,4 +81,11 @@ public class TicketMachine
         // Clear the balance.
         balance = 0;
     }
+    /**
+     * Fija el precio del billete a un precio dado.
+     */
+    public void setPrice(int coste)
+    {
+        price = coste;
+    }    
 }
