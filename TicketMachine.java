@@ -103,5 +103,9 @@ public class TicketMachine
     public void setPrice(int coste)
     {
         price = coste;
-    }    
+    }  
+    public void empty()
+    {   
+        total = 0;
+    }
 }
